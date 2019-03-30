@@ -17,25 +17,30 @@
       <div class="calculator grid-container">
         <!-- form for user input that represents a calculator -->
     		<form name="frmCalc" id="frmCalc">
-
+          <div class="header">
+            <p>Trevv's Calculator</p>
+          </div>
           <div class="history">
-
+            <caption>History</caption>
+            <!-- <br> -->
+            <p></p>
+            <img src="Down Arrow.png" alt="">
           </div>
     			<!-- Text Box to enter a numeric value -->
     			<input type="text" id="txtNumber" value="" size="20"/><br/><br/>
 
 
           <!-- *** Clear *** -->
-          <input id="clear" class="grid-item" type="reset" name="btnClear" value="AC"/>
+          <input id="clear" class="grid-item cmdBtn" type="reset" name="btnClear" value="AC"/>
 
     			<!-- *** Percent *** -->
-    			<input id="percent" class="grid-item" type="button" value="%" name="btnPercent"/>
+    			<input id="percent" class="grid-item cmdBtn" type="button" value="%" name="btnPercent"/>
 
     			<!-- *** Divide *** -->
-    			<input id="divide" class="func grid-item" type="button" value="÷" name="btnDivide"/>
+    			<input id="divide" class="func grid-item cmdBtn" type="button" value="÷" name="btnDivide"/>
 
           <!-- *** Multiply *** -->
-    			<input id="multi" class="func grid-item" type="button" value="*" name="btnMulti"/><br/>
+    			<input id="multi" class="func grid-item cmdBtn" type="button" value="*" name="btnMulti"/><br/>
 
           <!-- Number buttons -->
     			<input id="7" class="grid-item" type="button" value="7" name="btn7"/>
@@ -43,7 +48,7 @@
     			<input id="9" class="grid-item" type="button" value="9" name="btn9"/>
 
           <!-- ADD: Sets up operation to add current number to next number entered -->
-    			<input id="add"  class="func grid-item" type="button" value="+" name="btnPlus"/><br/>
+    			<input id="add"  class="func grid-item cmdBtn" type="button" value="+" name="btnPlus"/><br/>
 
 
           <!-- Number buttons -->
@@ -52,7 +57,7 @@
     			<input id="6" class="grid-item" type="button" value="6" name="btn6"/>
 
           <!-- *** Subtract *** -->
-    			<input id="sub"  class="func grid-item" type="button" value="-" name="btnMinus"/><br/>
+    			<input id="sub"  class="func grid-item cmdBtn" type="button" value="-" name="btnMinus"/><br/>
 
 
     			<!-- Number buttons -->
@@ -66,14 +71,14 @@
 
           <div class="lastRow">
             <!-- *** Plus/Minus *** -->
-      			<input id="pp" class="grid-item" type="button" value="±" name="btnPP"/>
+      			<input id="pp" class="grid-item cmdBtn" type="button" value="±" name="btnPP"/>
 
 
       			<!-- Number buttons -->
       			<input id="0" class="grid-item" type="button" value="0" name="btn0"/>
 
             <!-- *** Decimal *** -->
-            <input id="deci" class="grid-item" type="button" value="." name="btnDecimal"/>
+            <input id="deci" class="grid-item cmdBtn" type="button" value="." name="btnDecimal"/>
           </div>
 
 

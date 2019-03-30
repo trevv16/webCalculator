@@ -9,19 +9,19 @@ body {
 
   background: rgb(0,63,145);
   background: linear-gradient(169deg, rgba(0,63,145,1) 19%, rgba(152,210,235,1) 82%);
-  height: 612px;
+  height: 912px;
 
 }
 
 .calculator form{
 
   width: 325px;
-  height: 585px;
-  background: white;
+  height: 600px;
+  background-color: #003F91;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
-  padding-top: 25px;
+  border: 1px solid white;
 
 }
 
@@ -32,21 +32,49 @@ body {
 
 }
 
-.calculator input[type=submit] {
-  grid-row: 4/6;
-  position: relative;
-  left: 245px;
-  top: -81px;
-  border: none;
-  background-color: red;
-  margin: 3px 1px;
-  text-align: center;
-  height: 156px;
-  width: 75px;
-  padding-top: 5px;
+.header {
+
+  background: #86A5D9;
+  width: 100%;
+  height: 35px;
 }
 
+.header p {
+  font-family: Poppins;
+  font-style:normal;
+  font-weight: lighter;
+  font-size: 25px;
+  line-height: normal;
+  text-indent: 15px;
 
+  color: white;
+}
+
+.history {
+
+  background: #003F91;
+  width: 100%;
+  height: 55px;
+  text-indent: 15px;
+  color: white;
+  font-size: 14px;
+}
+
+.history:hover {
+
+  background-color: #98D2EB;
+}
+
+.history img {
+
+  position: absolute;
+  width: 20px;
+  height: 20.13px;
+
+  margin-left: 19%;
+  margin-right: auto;
+  margin-top: -3px;
+}
 
 
 .calculator input[type=text] {
@@ -58,24 +86,55 @@ body {
   font-size: 44px;
   color: white;
   text-align: right;
+  background: #86A5D9;
+  box-shadow: inset 4px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 .calculator input[type=button],  .calculator input[type=reset]{
   position: relative;
   left: 2px;
   border: none;
-  background-color: red;
+  background-color: #003F91;
+  color: #fff;
   margin: 3px 1px;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: normal;
   text-align: center;
+  text-shadow: 1px -2px 8px rgba(134, 165, 217, 0.34);
   height: 75px;
   width: 75px;
 }
 
-.history {
+.calculator input[type=submit] {
+  grid-row: 4/6;
+  position: relative;
+  left: 245px;
+  top: -81px;
+  border: none;
+  background-color: #003F91;
+  color: #fff;
+  margin: 3px 1px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: normal;
+  text-align: center;
+  height: 156px;
+  width: 75px;
+  padding-top: 5px;
+}
 
-  background: green;
-  width: 100%;
-  height: 75px;
+
+.cmdBtn {
+
+  color: rgba(237, 106, 90, 0.85) !important;
+
+  text-shadow: 1px -2px 3px rgba(134, 165, 217, 0.19) !important;
+}
+
+.calculator input[type=button]:hover,  .calculator input[type=reset]:hover, .calculator input[type=submit]:hover{
+  background-color: #98D2EB;
+
 }
 
 .lastRow {
@@ -84,6 +143,8 @@ body {
   top: -162px;
 
 }
+
+
 
 footer {
   text-align: center;
