@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Javascript Calculator</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="calc.css">
+
+    <script type="text/javascript" src="calc.js"></script>
+
+  </head>
+  <body>
+    <main>
+      <h1>Basic Web Calculator</h1>
+
+      <div class="calculator">
+        <!-- form for user input that represents a calculator -->
+    		<form name="frmCalc" id="frmCalc">
+
+    			<!-- Text Box to enter a numeric value -->
+    			<input type="text" id="txtNumber" value="" size="20"/><br/><br/>
+
+
+          <!-- *** Clear *** -->
+          <input id="clear" type="reset" name="btnClear" value="AC"/>
+
+    			<!-- *** Percent *** -->
+    			<input id="percent" type="button" value="%" name="btnPercent"/>
+
+    			<!-- *** Divide *** -->
+    			<input id="divide" class="func" type="button" value="÷" name="btnDivide"/>
+
+          <!-- *** Multiply *** -->
+    			<input id="multi" class="func" type="button" value="*" name="btnMulti"/><br/>
+
+          <!-- Number buttons -->
+    			<input id="7" type="button" value="7" name="btn7"/>
+    			<input id="8" type="button" value="8" name="btn8"/>
+    			<input id="9" type="button" value="9" name="btn9"/>
+
+          <!-- ADD: Sets up operation to add current number to next number entered -->
+    			<input id="add"  class="func" type="button" value="+" name="btnPlus"/><br/>
+
+
+          <!-- Number buttons -->
+    			<input id="4" type="button" value="4" name="btn4"/>
+    			<input id="5" type="button" value="5" name="btn5"/>
+    			<input id="6" type="button" value="6" name="btn6"/>
+
+          <!-- *** Subtract *** -->
+    			<input id="sub"  class="func" type="button" value="-" name="btnMinus"/><br/>
+
+
+    			<!-- Number buttons -->
+    			<input id="1" type="button" value="1" name="btn1"/>
+    			<input id="2" type="button" value="2" name="btn2"/>
+    			<input id="3" type="button" value="3" name="btn3"/>
+
+
+          <!-- *** Equals *** -->
+    			<input id="calculate" type="button" name="btnCalc" value="="/><br/>
+
+
+          <!-- *** Plus/Minus *** -->
+    			<input id="pp" type="button" value="±" name="btnPP"/>
+
+
+    			<!-- Number buttons -->
+    			<input id="0" type="button" value="0" name="btn0"/>
+
+          <!-- *** Decimal *** -->
+          <input id="deci" type="button" value="." name="btnDecimal"/>
+
+
+
+    			<br/><br/>
+
+    		</form>
+      </div>
+    </main>
+
+
+    <footer>
+      <caption>Developed By Trevor Njeru.</caption>
+    </footer>
+
+  </body>
+</html>
