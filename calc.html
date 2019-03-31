@@ -7,6 +7,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script type="text/javascript" src="calc.js"></script>
 
   </head>
@@ -43,42 +45,42 @@
     			<input id="multi" class="func grid-item cmdBtn" type="button" value="*" name="btnMulti"/><br/>
 
           <!-- Number buttons -->
-    			<input id="7" class="grid-item" type="button" value="7" name="btn7"/>
-    			<input id="8" class="grid-item" type="button" value="8" name="btn8"/>
-    			<input id="9" class="grid-item" type="button" value="9" name="btn9"/>
+    			<input id="7" class="grid-item buttns" type="button" value="7" name="btn7"/>
+    			<input id="8" class="grid-item buttns" type="button" value="8" name="btn8"/>
+    			<input id="9" class="grid-item buttns" type="button" value="9" name="btn9"/>
 
           <!-- ADD: Sets up operation to add current number to next number entered -->
     			<input id="add"  class="func grid-item cmdBtn" type="button" value="+" name="btnPlus"/><br/>
 
 
           <!-- Number buttons -->
-    			<input id="4" class="grid-item" type="button" value="4" name="btn4"/>
-    			<input id="5" class="grid-item" type="button" value="5" name="btn5"/>
-    			<input id="6" class="grid-item" type="button" value="6" name="btn6"/>
+    			<input id="4" class="grid-item buttns" type="button" value="4" name="btn4"/>
+    			<input id="5" class="grid-item buttns" type="button" value="5" name="btn5"/>
+    			<input id="6" class="grid-item buttns" type="button" value="6" name="btn6"/>
 
           <!-- *** Subtract *** -->
     			<input id="sub"  class="func grid-item cmdBtn" type="button" value="-" name="btnMinus"/><br/>
 
 
     			<!-- Number buttons -->
-    			<input id="1" class="grid-item" type="button" value="1" name="btn1"/>
-    			<input id="2" class="grid-item" type="button" value="2" name="btn2"/>
-    			<input id="3" class="grid-item" type="button" value="3" name="btn3"/><br/>
+    			<input id="1" class="grid-item buttns" type="button" value="1" name="btn1"/>
+    			<input id="2" class="grid-item buttns" type="button" value="2" name="btn2"/>
+    			<input id="3" class="grid-item buttns" type="button" value="3" name="btn3"/><br/>
 
 
           <!-- *** Equals *** -->
-    			<input id="calculate" class="grid-item calcBtn" type="submit" name="btnCalc" value="="/>
+    			<input id="calculate" class="grid-item calcBtn" type="button" name="btnCalc" value="="/>
 
           <div class="lastRow">
             <!-- *** Plus/Minus *** -->
-      			<input id="pp" class="grid-item cmdBtn" type="button" value="±" name="btnPP"/>
+      			<input id="pm" class="grid-item cmdBtn" type="button" value="±" name="btnPM"/>
 
 
       			<!-- Number buttons -->
-      			<input id="0" class="grid-item" type="button" value="0" name="btn0"/>
+      			<input id="0" class="grid-item buttns" type="button" value="0" name="btn0"/>
 
             <!-- *** Decimal *** -->
-            <input id="deci" class="grid-item cmdBtn" type="button" value="." name="btnDecimal"/>
+            <input id="deci" class="grid-item cmdBtn buttns" type="button" value="." name="btnDecimal"/>
           </div>
 
 
@@ -90,7 +92,8 @@
 
 
     <footer>
-      <caption>Developed By Trevor Njeru.</caption>
+      <caption>Developed By <a href="https://www.trevornjeru.com">Trevor Njeru.</a></caption>
+
     </footer>
 
   </body>
